@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { cn } from "@/lib/utils"; // Ensure this path is correct for your project
+import { cn } from "@/lib/utils"; 
 
 export const InfiniteMovingCards = ({
   items,
@@ -22,7 +22,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  });
 
   const [start, setStart] = useState(false);
 

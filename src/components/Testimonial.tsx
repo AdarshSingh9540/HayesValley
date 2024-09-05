@@ -13,7 +13,7 @@ export function InfiniteMovingCardsDemo() {
     >
       <div>
         <div className="flex justify-center items-center text-center text-md mb-1 mx-4 lg:mx-0">
-        Connecting our community with the world's best companies and institutions
+        Connecting our community with the world best companies and institutions
         </div>
         <div className="overflow-hidden relative h-[6rem] mx-4 lg:mx-0 lg:h-[6rem] ">
           <InfiniteMovingCards

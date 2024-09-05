@@ -28,7 +28,7 @@ const SiliconValleyFellows = () => {
           <span className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley </span><span className='text-white'>Fellows?</span>
         </h1>
         <p className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
-          It's no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. These individuals are usually
+          It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. These individuals are usually
           <br />
           intensely driven, devoted, and passionate about technology, entrepreneurship, and defying the norm.
         </p>
