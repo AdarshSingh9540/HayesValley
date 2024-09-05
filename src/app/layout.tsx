@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { BackgroundBeamsWithCollisionDemo } from "@/components/BeamBackground";
+import { AuroraBackgroundDemo } from "@/components/AuraBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="fixed inset-0 z-0">
-          <BackgroundBeamsWithCollisionDemo />
+          {/* <BackgroundBeamsWithCollisionDemo /> */}
+          {/* <AuroraBackgroundDemo/> */}
         </div>
         <Navbar />
         {children}

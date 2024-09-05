@@ -21,9 +21,18 @@ module.exports = {
         scroll:
         "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         shimmer: "shimmer 2s linear infinite",
+        aurora: "aurora 60s linear infinite",
       },
       },
       keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",

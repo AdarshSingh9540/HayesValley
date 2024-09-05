@@ -12,7 +12,7 @@ export function InfiniteMovingCardsDemo() {
       }}
     >
       <div>
-        <div className="flex justify-center items-center text-center text-md mb-1 mx-4 lg:mx-0">
+        <div className="flex justify-center text-lg items-center text-center  mb-1 mx-4 lg:mx-0 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-200 to-gray-400" >
         Connecting our community with the world best companies and institutions
         </div>
         <div className="overflow-hidden relative h-[6rem] mx-4 lg:mx-0 lg:h-[6rem] ">
@@ -48,12 +48,20 @@ export function InfiniteMovingCardsDemo() {
 const logos = [
   { src: "https://framerusercontent.com/images/GBSZAlYEl2SwHzq0dObfIgTsZA.png?scale-down-to=1024", alt: "Logo 2" },
   { src: "https://framerusercontent.com/images/thsWiap5gkK7TCikwX2H5osl0SI.png?scale-down-to=1024", alt: "Logo 3" },
+  {
+    "src": "https://framerusercontent.com/images/E0qMIfDvBYTJqkpxqvRFT1us5w.png?scale-down-to=1024",
+    "alt": ""
+},
   { src: "https://framerusercontent.com/images/U0e0mIBkhyzMBmChOYUKWMDiPsc.png?scale-down-to=1024", alt: "Logo 4" },
   { src: "https://framerusercontent.com/images/V47U1pV0RpgrWXWEWj5WLtjoEc.png?scale-down-to=1024", alt: "Logo 5" },
   { src: "https://framerusercontent.com/images/GBSZAlYEl2SwHzq0dObfIgTsZA.png?scale-down-to=1024", alt: "Logo 7" },
   { src: "https://framerusercontent.com/images/thsWiap5gkK7TCikwX2H5osl0SI.png?scale-down-to=1024", alt: "Logo 8" },
   { src: "https://framerusercontent.com/images/U0e0mIBkhyzMBmChOYUKWMDiPsc.png?scale-down-to=1024", alt: "Logo 9" },
-  { src: "https://framerusercontent.com/images/V47U1pV0RpgrWXWEWj5WLtjoEc.png?scale-down-to=1024", alt: "Logo 10" }
+  { src: "https://framerusercontent.com/images/V47U1pV0RpgrWXWEWj5WLtjoEc.png?scale-down-to=1024", alt: "Logo 10" },
+  {
+    "src": "https://framerusercontent.com/images/E0qMIfDvBYTJqkpxqvRFT1us5w.png?scale-down-to=1024",
+    "alt": ""
+},
 ];
 
 const logos2=[

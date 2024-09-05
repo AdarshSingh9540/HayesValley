@@ -1,6 +1,18 @@
+'use client'
 import { FaBriefcase, FaGraduationCap, FaChartLine } from 'react-icons/fa';
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
+
 
 const SiliconValleyFellows = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "center center"]
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+
   const sections = [
     {
       icon: <FaBriefcase className="text-3xl mx-auto mb-4 text-gray-300" />,
@@ -22,11 +34,21 @@ const SiliconValleyFellows = () => {
   return (
     <div className=" py-12 px-8 lg:px-4">
       <div className="text-center">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-10 text-white">
+        <motion.h1
+        ref={ref}
+        style={{
+          scale: scale, // Apply subtle scaling
+        }}
+        className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">
           Who are the{' '}
           <br />
-          <span className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley </span><span className='text-white'>Fellows?</span>
-        </h1>
+          <motion.span
+          ref={ref}
+          style={{
+            scale: scale, // Apply subtle scaling
+          }}
+          className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
+        </motion.h1>
         <p className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
           It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. These individuals are usually
           <br />
@@ -35,7 +57,7 @@ const SiliconValleyFellows = () => {
       </div>
 
       <div className="text-center my-[5rem]">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-8 text-white">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">
           We believe the program will be advantageous for you if you are:
         </h2>
 
@@ -43,7 +65,7 @@ const SiliconValleyFellows = () => {
           {sections.map((section, index) => (
             <div
               key={index}
-              className="border p-4 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="border border-gray-500 p-4 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110"
             >
               {section.icon}
               <h3 className="text-xl font-semibold mb-2 bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">{section.title}</h3>

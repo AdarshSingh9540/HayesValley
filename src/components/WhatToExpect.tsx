@@ -1,7 +1,7 @@
 
 const ExpectationItem = ({ title, description }:any) => (
   <div className="mb-6 text-center">
-    <span className="font-bold mb-2 text-md lg:text-lg">{title}</span>
+    <span className="text-gray-200 font-bold mb-2 text-md lg:text-lg">{title}</span>
     <span className="text-gray-400 mx-2 text-md lg:text-lg">{description}</span>
   </div>
 );
@@ -28,7 +28,7 @@ const WhatToExpect = () => {
 
   return (
     <div className="max-w-6xl mx-auto py-16 px-8 lg:px-4">
-      <h2 className="text-2xl lg:text-5xl font-bold text-center mb-8">What to Expect</h2>
+      <h2 className="text-2xl lg:text-5xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">What to Expect</h2>
       <div className="space-y-8">
         {expectations.map((item, index) => (
           <ExpectationItem key={index} title={item.title} description={item.description} />

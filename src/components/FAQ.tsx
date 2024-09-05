@@ -16,7 +16,7 @@ const FAQItem = ({ question, answer }: any) => {
         className="flex justify-between items-center w-full p-2 lg:p-4 text-left"
         onClick={toggleFAQ}
       >
-        <span className="font-medium">{question}</span>
+        <span className="font-medium text-gray-200 ">{question}</span>
         <Plus className={`w-5 h-5 transform transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`} />
       </button>
       <div
@@ -25,7 +25,7 @@ const FAQItem = ({ question, answer }: any) => {
         className="overflow-hidden transition-height duration-300 ease-in-out"
       >
         <div className="p-4 pt-0">
-          <p className="text-gray-600">{answer}</p>
+          <p className="text-gray-400">{answer}</p>
         </div>
       </div>
     </div>
@@ -78,8 +78,8 @@ const FAQ = () => {
 
   return (
     <div className="max-w-lg lg:max-w-4xl mx-auto py-12 px-8 lg:px-4">
-      <h1 className="text-xl lg:text-4xl font-bold text-center mb-2">Frequently Asked Questions</h1>
-      <p className="text-center text-gray-600 mb-8">Everything you need to know about <br className='lg:hidden'/> the Silicon Valley Fellowship.</p>
+      <h1 className="text-xl lg:text-4xl font-bold text-center mb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-540">Frequently Asked Questions</h1>
+      <p className="text-center text-gray-300 mb-8">Everything you need to know about <br className='lg:hidden'/> the Silicon Valley Fellowship.</p>
       <div className="grid  gap-3 lg:gap-6">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
