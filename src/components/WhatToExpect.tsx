@@ -36,7 +36,7 @@ const WhatToExpect = () => {
   });
 
   const scale = useTransform(scrollYProgress, [0, 0.7], [0.6, 1.1]);
-  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.7,0.9])
+  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.6,0.9])
 
   return (
 
@@ -44,12 +44,19 @@ const WhatToExpect = () => {
       <motion.h2
       ref={ref}
       style={{
-        scale: scale, // Apply subtle scaling
+        scale: scale, 
       }}
       className="text-2xl lg:text-5xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">What to Expect</motion.h2>
       <div className="space-y-8">
         {expectations.map((item, index) => (
-          <ExpectationItem key={index} title={item.title} description={item.description} />
+          <motion.div
+          ref={ref}
+          style={{
+            scale: scale2, 
+          }}
+          >
+            <ExpectationItem key={index} title={item.title} description={item.description} />
+          </motion.div>
         ))}
       </div>
     </div>

@@ -48,7 +48,7 @@ const SiliconValleyFellows = () => {
           style={{
             scale: scale, // Apply subtle scaling
           }}
-          className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
+          className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Ark Impact Labs </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
         </motion.h1>
         <motion.p
          ref={ref}
@@ -57,7 +57,7 @@ const SiliconValleyFellows = () => {
          }}
         className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
           It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. <br /> These individuals are usually
-          intensely driven, devoted, and passionate  about technology <br /> , entrepreneurship,  and defying the norm.
+          intensely driven, devoted, and passionate  about technology, <br /> entrepreneurship,  and defying the norm.
         </motion.p>
       </div>
 

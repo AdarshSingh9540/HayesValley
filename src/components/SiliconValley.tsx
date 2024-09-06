@@ -21,7 +21,7 @@ const SiliconValleyFellowship = () => {
       }}
       className="text-3xl sm:text-4xl lg:text-5xl font-semibold lg:font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500 mb-8">
         What is the{' '}
-        <br /> <span className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley Fellowship</span> <span className="text-white">?</span>
+        <br /> <span className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Ark Impact Labs Fellowship</span> <span className="text-white">?</span>
       </motion.h1>
       <motion.p
        ref={ref}

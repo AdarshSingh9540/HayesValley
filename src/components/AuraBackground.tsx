@@ -19,7 +19,7 @@ export function AuroraBackgroundDemo() {
       >
            <div className='flex flex-col justify-center items-center h-screen'>
        <div>
-       <h1  className='bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-white via-gray-300 to-gray-500 text-center text-3xl lg:text-7xl font-bold'>AI Lab & Founders <br /><span className='bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500'>Fellowship</span><span className='text-white'>.</span></h1>
+       <h1  className='bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-white via-gray-300 to-gray-500 text-center text-3xl lg:text-7xl font-bold'>Ark Labs & Founders <br /><span className='bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500'>Fellowship</span><span className='text-white'>.</span></h1>
        </div>
        <div className='text-center my-4 text-md lg:text-xl text-gray-400 py-2'>
        <p>A dedicated space for  building and <br /> collaboration, in the heart of San Francisco   </p>

@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-xl font-bold text-gray-300 mb-2">SILICON VALLEY FELLOWSHIP</h2>
+            <h2 className="text-xl font-bold text-gray-300 mb-2">Ark Impact Labs FELLOWSHIP</h2>
             <p className="text-sm mb-2">Become a Silicon Valley Insider in one week.</p>
             <p className="text-sm mb-2">Gomry, Inc.</p>
             <p className="text-sm mb-2">44 Montgomery St, San Francisco, CA 94104</p>
