@@ -50,6 +50,7 @@ const WhatToExpect = () => {
       <div className="space-y-8">
         {expectations.map((item, index) => (
           <motion.div
+          key={index} 
           ref={ref}
           style={{
             scale: scale2, 
