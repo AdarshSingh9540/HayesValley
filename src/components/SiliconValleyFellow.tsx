@@ -55,7 +55,7 @@ const SiliconValleyFellows = () => {
          style={{
            scale: scale2, 
          }}
-        className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
+        className="text-gray-300 text-base sm:text-md lg:text-lg mb-6">
           It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. <br /> These individuals are usually
           intensely driven, devoted, and passionate  about technology, <br /> entrepreneurship,  and defying the norm.
         </motion.p>
@@ -74,7 +74,7 @@ const SiliconValleyFellows = () => {
             >
               {section.icon}
               <h3 className="text-xl font-semibold mb-2 bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">{section.title}</h3>
-              <p className="text-gray-400">{section.description}</p>
+              <p className="text-gray-300">{section.description}</p>
             </div>
           ))}
         </div>

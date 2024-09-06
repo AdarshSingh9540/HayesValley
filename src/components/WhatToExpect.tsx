@@ -5,7 +5,7 @@ import { useRef } from "react";
 const ExpectationItem = ({ title, description }:any) => (
   <div className="mb-6 text-center">
     <span className="text-gray-200 font-bold mb-2 text-md lg:text-lg">{title}</span>
-    <span className="text-gray-400 mx-2 text-md lg:text-lg">{description}</span>
+    <span className="text-gray-300 mx-2 text-md lg:text-lg">{description}</span>
   </div>
 );
 
@@ -19,10 +19,10 @@ const WhatToExpect = () => {
       title: "Visits to companies and Universities:",
       description: "Spending half a day in the life of Google employees, Amazon Engineers, Stanford academics, investors and founders."
     },
-    {
-      title: "Networking opportunities:",
-      description: "Like several alumni, during the fellowship you could meet your co-founder, personal mentor or earn a referral."
-    },
+    // {
+    //   title: "Networking opportunities:",
+    //   description: "Like several alumni, during the fellowship you could meet your co-founder, personal mentor or earn a referral."
+    // },
     {
       title: "Slack community:",
       description: "Access to our main internal communication channel where you will find opportunities, referrals, job postings and a chance to dialogue with mentors, get a visa and meet your co-founder."
@@ -36,7 +36,7 @@ const WhatToExpect = () => {
   });
 
   const scale = useTransform(scrollYProgress, [0, 0.7], [0.6, 1.1]);
-  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.6,0.9])
+  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.7,0.9])
 
   return (
 
