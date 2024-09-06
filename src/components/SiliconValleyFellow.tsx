@@ -11,8 +11,8 @@ const SiliconValleyFellows = () => {
     offset: ["end end", "center center"]
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
-
+  const scale = useTransform(scrollYProgress, [0, 0.7], [0.6, 1.1]);
+  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.7,0.9])
   const sections = [
     {
       icon: <FaBriefcase className="text-3xl mx-auto mb-4 text-gray-300" />,
@@ -30,16 +30,17 @@ const SiliconValleyFellows = () => {
       description: "Wishing to expand your network and learn the most innovative practices in tech, management, and building.",
     }
   ];
+  
 
   return (
-    <div className=" py-12 px-8 lg:px-4">
+    <div className=" py-12 px-8 lg:px-4 overflow-x-hidden">
       <div className="text-center">
         <motion.h1
         ref={ref}
         style={{
           scale: scale, // Apply subtle scaling
         }}
-        className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">
+        className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">
           Who are the{' '}
           <br />
           <motion.span
@@ -49,11 +50,15 @@ const SiliconValleyFellows = () => {
           }}
           className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Hayes Valley </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
         </motion.h1>
-        <p className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
-          It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. These individuals are usually
-          <br />
-          intensely driven, devoted, and passionate about technology, entrepreneurship, and defying the norm.
-        </p>
+        <motion.p
+         ref={ref}
+         style={{
+           scale: scale2, 
+         }}
+        className="text-gray-400 text-base sm:text-md lg:text-lg mb-6">
+          It no revelation that primarily unique personalities are drawn to Silicon Valley due to its self-selective nature. <br /> These individuals are usually
+          intensely driven, devoted, and passionate  about technology <br /> , entrepreneurship,  and defying the norm.
+        </motion.p>
       </div>
 
       <div className="text-center my-[5rem]">

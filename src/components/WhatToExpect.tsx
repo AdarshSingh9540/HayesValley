@@ -1,3 +1,6 @@
+'use client'
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
 
 const ExpectationItem = ({ title, description }:any) => (
   <div className="mb-6 text-center">
@@ -26,9 +29,24 @@ const WhatToExpect = () => {
     }
   ];
 
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "center center"]
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 0.7], [0.6, 1.1]);
+  const scale2 = useTransform(scrollYProgress,[0,0.8],[0.7,0.9])
+
   return (
+
     <div className="max-w-6xl mx-auto py-16 px-8 lg:px-4">
-      <h2 className="text-2xl lg:text-5xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">What to Expect</h2>
+      <motion.h2
+      ref={ref}
+      style={{
+        scale: scale, // Apply subtle scaling
+      }}
+      className="text-2xl lg:text-5xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">What to Expect</motion.h2>
       <div className="space-y-8">
         {expectations.map((item, index) => (
           <ExpectationItem key={index} title={item.title} description={item.description} />
