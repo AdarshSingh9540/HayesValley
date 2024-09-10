@@ -9,9 +9,9 @@ const Navbar = () => {
           </div>
           <div className="flex items-center  lg:space-x-4">
             <ul className="flex lg:space-x-4">
-              <li><a href="#home" className="text-gray-300 hover:text-gray-600 text-md hidden lg:block">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-gray-600 text-md hidden lg:block">Resource</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-gray-600 text-md hidden lg:block">Community</a></li>
+              <li><a href="#home" className="text-gray-300 hover:text-gray-100 text-md hidden lg:block">Home</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-gray-100 text-md hidden lg:block">Resource</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-gray-100 text-md hidden lg:block">Community</a></li>
             </ul>
   
            <HoverBorderGradientDemo/>

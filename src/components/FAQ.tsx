@@ -13,7 +13,7 @@ const FAQItem = ({ question, answer }: any) => {
   return (
     <div className="border shadow-lg border-slate-600 rounded-lg mb-4 px-4 lg:px-0">
       <button
-        className="flex justify-between items-center w-full p-2 lg:p-4 text-left"
+        className="flex justify-between items-center w-full p-2 lg:p-4 text-left text-slate-100"
         onClick={toggleFAQ}
       >
         <span className="font-medium text-gray-200 ">{question}</span>

@@ -11,7 +11,7 @@ import WhatToExpect from "@/components/WhatToExpect";
 
 export default function Home() {
   return (
-       <>
+    <div className="bg-background-default text-text-default bg-black dark:text-white">
        {/* <HeroSection/> */}
        <AuroraBackgroundDemo/>
        <ShootingStarsAndStarsBackgroundDemo/>
@@ -21,6 +21,6 @@ export default function Home() {
        <WhatToExpect/>
        <FAQ/>
        <Footer/>
-       </>
+       </div>
     );
 }

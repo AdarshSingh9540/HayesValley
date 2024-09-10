@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set default dark theme colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255; /* White text for dark mode */
+  --background-start-rgb: 0, 0, 0; /* Black background for dark mode */
+  --background-end-rgb: 0, 0, 0; /* Black background for dark mode */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0; /* Black text for light mode */
+    --background-start-rgb: 214, 219, 220; /* Light background start */
+    --background-end-rgb: 255, 255, 255; /* Light background end */
   }
 }
 

@@ -4,7 +4,7 @@ import colors from "tailwindcss/colors";
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
- 
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,12 +15,22 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        background: {
+          DEFAULT: "#000000", // Black background for dark mode
+        },
+        text: {
+          DEFAULT: "#ffffff", // White text for dark mode
+        },
+        border: {
+          DEFAULT: "#ffffff", // White borders for dark mode
+        },
+      },
       animation: {
         scroll:
-        "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         shimmer: "shimmer 2s linear infinite",
         aurora: "aurora 60s linear infinite",
-      },
       },
       keyframes: {
         aurora: {
@@ -47,7 +57,7 @@ module.exports = {
         marquee: {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0%)" },
-        
+        },
       },
     },
   },
