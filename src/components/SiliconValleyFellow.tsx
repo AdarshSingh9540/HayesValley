@@ -48,7 +48,7 @@ const SiliconValleyFellows = () => {
           style={{
             scale: scale, // Apply subtle scaling
           }}
-          className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Ark Impact Labs </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
+          className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Ark Impact </motion.span><span className='bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500'>Fellows?</span>
         </motion.h1>
         <motion.p
          ref={ref}

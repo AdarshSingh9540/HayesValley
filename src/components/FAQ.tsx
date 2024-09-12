@@ -35,51 +35,47 @@ const FAQItem = ({ question, answer }: any) => {
 const FAQ = () => {
   const faqs = [
     {
-      question: "Is my acceptance to a batch transferable to another one?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      question:"What is the duration of the program?",
+      answer:"The program is a week long."
     },
     {
-      question: "How selective is the Silicon Valley Fellowship program?",
-      answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question:"What is the cost of the program?",
+      answer:"The program cost is 4500 CAD which includes accommodation."
+    },
+    {
+      question: "What is the deadline for applications?",
+      answer: "The deadline for applications is September 28."
+    },
+    {
+      question: "What is the program start date?",
+      answer: "The program starts on October 8."
+    },
+    {
+      question: "Is my acceptance to a batch transferable to another one?",
+      answer: "Yes"
+    },
+    {
+      question: "How selective is the Ark Impact Fellowship program?",
+      answer: "Less than 1% of applicants are accepted."
     },
     {
       question: "Is the program open to all nationalities?",
-      answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      answer: "No, only to residents of Canada."
     },
     {
       question: "Are there scholarships available?",
-      answer: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      answer: "Yes, there are scholarships available."
     },
     {
-      question: "Which visa do I need and how do I apply for it?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      question: "Who organizes the Silicon Valley Fellowship? And why?",
-      answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    {
-      question: "Does the participation to Silicon Valley Fellowship grant me a work visa?",
-      answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-      question: "What is the difference with the Silicon Valley Study Tour?",
-      answer: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        question: "Is the program open to all nationalities?",
-        answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      },
-      {
-        question: "Are there scholarships available?",
-        answer: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      },
+      question: "Who organizes the Ark Impact Fellowship? And why?",
+      answer: "The Ark Impact Fellowship, founded by a group of seasoned entrepreneurs, is based in Hayes Valley, San Francisco. The program is dedicated to helping founders build and scale their startups in the vibrant heart of the city."
+    }
   ];
 
   return (
     <div className="max-w-lg lg:max-w-4xl mx-auto py-12 px-8 lg:px-4">
       <h1 className="text-xl lg:text-4xl font-bold text-center mb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-540">Frequently Asked Questions</h1>
-      <p className="text-center text-gray-300 mb-8">Everything you need to know about <br className='lg:hidden'/> the Ark Impact Labs Fellowship.</p>
+      <p className="text-center text-gray-300 mb-8">Everything you need to know about <br className='lg:hidden'/> the Ark Impact Fellowship.</p>
       <div className="grid  gap-3 lg:gap-6">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />

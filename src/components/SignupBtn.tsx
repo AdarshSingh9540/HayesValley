@@ -11,7 +11,13 @@ export function HoverBorderGradientDemo() {
         className=" flex items-center"
       >
         <AceternityLogo />
+        <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfPKJbu6qkdTwz323zoSYOwQjsLezj60CYpCpPJCYymCffYhA/viewform" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-slate-400">
         <span className="px-2">Apply</span>
+      </a>
       </HoverBorderGradient>
     </div>
   );
