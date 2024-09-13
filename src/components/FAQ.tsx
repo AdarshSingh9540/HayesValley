@@ -10,6 +10,8 @@ const FAQItem = ({ question, answer }: any) => {
     setIsOpen(!isOpen);
   };
 
+
+  
   return (
     <div className="border shadow-lg border-slate-600 rounded-lg mb-4 px-4 lg:px-0">
       <button
