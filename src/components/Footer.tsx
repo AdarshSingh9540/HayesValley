@@ -8,7 +8,7 @@ const Footer = () => {
            <div className="mb-6 md:mb-0">
             <h2 className="text-xl font-bold text-gray-300 mb-2">ARK IMPACT FELLOWSHIP</h2>
             <p className="text-sm mb-2">Become a Silicon Valley Insider in one week.</p>
-            <p className="text-sm mb-2">436 Haight St, San Francisco, CA 94117</p>
+            <p className="text-sm mb-2">2261 Market St, STE 10721, San Francisco CA 94114</p>
             <p className="text-sm">admin@arkimpactlabs.com</p>
           </div>
           {/*
