@@ -7,7 +7,7 @@ const Navbar = () => {
           <div className="bg-clip-text text-transparent bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500 font-bold text-xl">
           Ark Impact Labs
           </div>
-          <div className="flex items-center  lg:space-x-4">
+          <div className="flex items-center ">
             {/* <ul className="flex lg:space-x-4">
               <li><a href="#home" className="text-gray-300 hover:text-gray-100 text-md hidden lg:block">Home</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-gray-100 text-md hidden lg:block">Resource</a></li>

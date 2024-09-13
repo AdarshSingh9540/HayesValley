@@ -16,7 +16,7 @@ export function HoverBorderGradientDemo() {
       target="_blank" 
       rel="noopener noreferrer"
       className="text-slate-400">
-        <span className="px-2">Apply</span>
+        <span className="">Apply</span>
       </a>
       </HoverBorderGradient>
     </div>

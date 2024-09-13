@@ -27,8 +27,8 @@ export function AuroraBackgroundDemo() {
         <div className='mt-[1rem]'>
             <Button/>
         </div>
-        <div>
-            <p className='text-2xl text-gray-200 my-4'>New Batch starts from 8th October, Apply by September 28!</p>
+        <div className='text-center mx-8 lg:mx-0'>
+            <p className='text-lg lg:text-2xl text-gray-200 my-4'>New Batch starts from 8th October, Apply by September 28!</p>
         </div>
    </div>
       </motion.div>

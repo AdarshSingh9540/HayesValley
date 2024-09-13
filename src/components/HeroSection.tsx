@@ -17,7 +17,7 @@ function HeroSection() {
             <Button/>
         </div>
         <div>
-            <p className='text-2xl text-gray-200 my-4'>New Batch starts from 8th October, Apply by September 28!</p>
+            <p className='lg:text-2xl text-gray-200 my-4'>New Batch starts from 8th October, Apply by September 28!</p>
         </div>
    </div>
    </>
